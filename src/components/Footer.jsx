@@ -5,7 +5,7 @@ const Footer = () => {
     const links = [
         { icon: Github, href: "https://github.com/Bachaendale", label: "GitHub" },
         { icon: Mail, href: "mailto:asebacha5@gmail.com", label: "Email" },
-        { icon: FileText, href: "/resume.pdf", label: "Resume", download: true }
+        { icon: FileText, href: "/resume.png", label: "Resume", download: true }
     ];
 
     return (
