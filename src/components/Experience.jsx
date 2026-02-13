@@ -4,6 +4,7 @@ const Experience = () => {
     const achievements = [
         "Engineered a full-stack Smart Sales System with Django & React.",
         "Developed a custom Dairy Management System using Django REST.",
+        "Built the Justice Constructions website using React JS and Convex.",
         "Built responsive React frontend for a modern fitness application."
     ];
 

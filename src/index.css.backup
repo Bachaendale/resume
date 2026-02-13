@@ -1,42 +1,40 @@
-/* ===========================
-   DESIGN SYSTEM & TOKENS
-   =========================== */
+
 
 :root {
-  /* Dark Theme Colors */
+  
   --color-bg-primary: #0a0a0f;
   --color-bg-secondary: #12121a;
   --color-bg-tertiary: #1a1a28;
   --color-bg-card: rgba(26, 26, 40, 0.6);
   --color-bg-card-hover: rgba(26, 26, 40, 0.9);
 
-  /* Pearly White Text Colors */
+  
   --color-text-primary: #f8f8ff;
   --color-text-secondary: #e8e8f0;
   --color-text-muted: #b8b8c8;
   --color-text-accent: #d8d8e8;
 
-  /* Accent Colors */
+  
   --color-accent-primary: #6366f1;
   --color-accent-secondary: #8b5cf6;
   --color-accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   --color-accent-glow: rgba(99, 102, 241, 0.3);
 
-  /* Border & Divider */
+  
   --color-border: rgba(248, 248, 255, 0.1);
   --color-border-hover: rgba(248, 248, 255, 0.2);
 
-  /* Shadows & Effects */
+  
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
   --shadow-glow: 0 0 20px var(--color-accent-glow);
 
-  /* Typography */
+  
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  /* Spacing - Reduced for compact layout */
+  
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 0.75rem;
@@ -44,22 +42,20 @@
   --spacing-xl: 1.5rem;
   --spacing-2xl: 2rem;
 
-  /* Border Radius */
+  
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-xl: 24px;
   --radius-full: 9999px;
 
-  /* Transitions */
+  
   --transition-fast: 150ms ease-in-out;
   --transition-base: 250ms ease-in-out;
   --transition-slow: 400ms ease-in-out;
 }
 
-/* ===========================
-   RESET & BASE STYLES
-   =========================== */
+
 
 * {
   margin: 0;
@@ -81,9 +77,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===========================
-   LAYOUT
-   =========================== */
+
 
 .app {
   min-height: 100vh;
@@ -112,9 +106,7 @@ body {
   z-index: 1;
 }
 
-/* ===========================
-   HEADER / NAVIGATION
-   =========================== */
+
 
 .header {
   position: fixed;
@@ -189,9 +181,7 @@ body {
   width: 100%;
 }
 
-/* ===========================
-   SECTIONS
-   =========================== */
+
 
 .section {
   padding: var(--spacing-xl) 0;
@@ -323,9 +313,7 @@ body {
     text-align: justify;
   }
 
-  /* ===========================
-   CARDS
-   =========================== */
+  
 
   .card {
     background: var(--color-bg-card);
@@ -386,9 +374,7 @@ body {
     line-height: 1.7;
   }
 
-  /* ===========================
-   ABOUT SECTION
-   =========================== */
+  
 
   .about-content {
     width: 100%;
@@ -402,9 +388,7 @@ body {
     text-align: justify;
   }
 
-  /* ===========================
-   EXPERIENCE & EDUCATION
-   =========================== */
+  
 
   .timeline {
     width: 100%;
@@ -440,9 +424,7 @@ body {
     box-shadow: var(--shadow-glow);
   }
 
-  /* ===========================
-   SKILLS SECTION
-   =========================== */
+  
 
   .skill-category {
     margin-bottom: var(--spacing-xl);
@@ -513,9 +495,7 @@ body {
     white-space: nowrap;
   }
 
-  /* ===========================
-   PROJECTS SECTION
-   =========================== */
+  
 
   .projects-grid {
     display: grid;
@@ -544,9 +524,7 @@ body {
     font-weight: bold;
   }
 
-  /* ===========================
-   RESPONSIVE DESIGN
-   =========================== */
+  
 
   @media (max-width: 768px) {
     .hero-content {
@@ -603,9 +581,7 @@ body {
     }
   }
 
-  /* ===========================
-   ANIMATIONS
-   =========================== */
+  
 
   @keyframes fadeInUp {
     from {
@@ -623,7 +599,7 @@ body {
     animation: fadeInUp 0.6s ease-out forwards;
   }
 
-  /* Stagger animation delays */
+  
   .fade-in-up:nth-child(1) {
     animation-delay: 0.1s;
   }

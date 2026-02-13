@@ -1,6 +1,8 @@
 import React from 'react';
 
 const About = () => {
+    const focusAreas = ['Full-Stack Web Apps', 'Clean Architecture', 'Team Collaboration', 'Continuous Learning'];
+
     return (
         <section id="about" className="section">
             <div className="container">
@@ -12,14 +14,20 @@ const About = () => {
                     About Me
                 </h2>
                 <div className="about-content">
-                    <p className="about-text">
-                        Computer Science graduate from the American College of Technology with expertise in Python, Django, and React.
-                        I specialize in building full-stack applications that are functional, user-friendly, and maintainable.
-                    </p>
-                    <p className="about-text">
-                        I thrive in collaborative environments where clean code and best practices are valued.
-                        Always eager to learn new technologies and contribute to team success while growing as a developer.
-                    </p>
+                    <article className="about-panel">
+                        <p className="about-lead">
+                            Computer Science graduate from the American College of Technology, focused on building reliable full-stack products.
+                        </p>
+                        <p className="about-text">
+                            I work mainly with Python, Django, and React to create applications that are maintainable, user-friendly, and built for real business needs.
+                            I do my best work in collaborative teams where clean code, ownership, and steady improvement are expected.
+                        </p>
+                        <div className="about-tags">
+                            {focusAreas.map((area) => (
+                                <span key={area} className="about-tag">{area}</span>
+                            ))}
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>

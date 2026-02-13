@@ -103,6 +103,10 @@ const MyStack = () => {
                 {
                     name: 'SQLite',
                     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg'
+                },
+                {
+                    name: 'Convex',
+                    logo: 'https://cdn.simpleicons.org/convex/f97316'
                 }
             ]
         },

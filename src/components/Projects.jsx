@@ -5,11 +5,13 @@ const Projects = () => {
         'Django': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
         'Django REST': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
         'React': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+        'React JS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
         'PostgreSQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
         'MySQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
         'CSS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
         'JavaScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-        'HTML': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+        'HTML': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+        'Convex': 'https://cdn.simpleicons.org/convex/f97316'
     };
 
     const projects = [
@@ -24,6 +26,12 @@ const Projects = () => {
             period: '2023',
             description: 'Developed a custom business solution using Django REST Framework and React for streamlined operations.',
             technologies: ['Django REST', 'React', 'MySQL']
+        },
+        {
+            title: 'Website for Justice Constructions',
+            period: '2025',
+            description: 'Built a modern business website for Justice Constructions with a fast React JS frontend and Convex-powered backend workflows.',
+            technologies: ['React JS', 'Convex']
         },
         {
             title: 'Fitness Company Frontend',
@@ -57,7 +65,11 @@ const Projects = () => {
                             <div className="project-tech-list">
                                 {project.technologies.map((tech, techIndex) => (
                                     <div key={techIndex} className="project-tech-badge">
-                                        <img src={techLogos[tech]} alt={tech} className="project-tech-logo" />
+                                        {techLogos[tech] ? (
+                                            <img src={techLogos[tech]} alt={tech} className="project-tech-logo" />
+                                        ) : (
+                                            <span className="project-tech-fallback">{tech.charAt(0)}</span>
+                                        )}
                                         <span className="project-tech-name">{tech}</span>
                                     </div>
                                 ))}
